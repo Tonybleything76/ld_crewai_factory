@@ -25,3 +25,17 @@ assessment_design_task:
   expected_output: >
     A rigorous Quiz/Exam document containing scenario-based test items mapping 1:1 to every curriculum objective, including the stems, 4 standard distractors, the correct option, and detailed feedback.
   agent: assessment_designer
+
+strategy_development_task:
+  description: >
+    Analyze the {business_brief} and {sme_notes} to output the Course Strategy Brief.
+  expected_output: >
+    A Markdown document outlining the learner profile, scope boundaries, modality, governance emphasis, and module-level intent.
+  agent: strategy_lead
+
+learner_research_task:
+  description: >
+    Analyze the {business_brief} and {sme_notes} to expand the Target Audience into a full Learner Persona.
+  expected_output: >
+    A Markdown document containing a rich persona profile, including demographics, key motivations, pain points, and technical constraints.
+  agent: learner_research_specialist
