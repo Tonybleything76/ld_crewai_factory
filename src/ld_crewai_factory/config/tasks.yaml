@@ -1,0 +1,27 @@
+design_curriculum_task:
+  description: >
+    Read the provided {sme_notes} and {business_brief}. Generate a complete 6-module curriculum outline following the Moore+Vella framework.
+  expected_output: >
+    A perfectly formatted output outlining 6 modules, each containing distinct, scenario-based learning objectives.
+  agent: learning_architect
+
+audit_delivery_task:
+  description: >
+    Review the generated curriculum from the previous task. Ensure it perfectly aligns with the Business Brief. Reject any "Knowledge-Recall" verbs. 
+  expected_output: >
+    A PASS/FAIL audit summary outlining any required fixes.
+  agent: qa_manager
+
+storyboard_design_task:
+  description: >
+    Process the drafted Instructional Script and define the visual layer for every module.
+  expected_output: >
+    A complete Shot List and Visual Storyboard text containing robust Alt-Text descriptions, layout details, and governance checks for the module.
+  agent: storyboard_agent
+
+assessment_design_task:
+  description: >
+    Process the drafted curriculum objectives and generate exactly ONE question per objective that tests observable performance.
+  expected_output: >
+    A rigorous Quiz/Exam document containing scenario-based test items mapping 1:1 to every curriculum objective, including the stems, 4 standard distractors, the correct option, and detailed feedback.
+  agent: assessment_designer
