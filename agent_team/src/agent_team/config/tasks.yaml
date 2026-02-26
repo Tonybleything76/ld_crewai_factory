@@ -1,0 +1,76 @@
+strategy_planning_task:
+  description: >
+    Analyze the raw project requests and draft a comprehensive training strategy document defining core goals.
+  expected_output: >
+    A structured strategy brief outlining overall project goals and intended business outcomes.
+  agent: strategy_lead
+
+learner_analysis_task:
+  description: >
+    Conduct an audience analysis identifying typical frictions, knowledge gaps, and daily realities.
+  expected_output: >
+    A detailed learner persona and environment analysis report.
+  agent: learner_research
+
+curriculum_blueprint_task:
+  description: >
+    Design the course outline, establishing module structure and mapping specific learning objectives to modules.
+  expected_output: >
+    A high-level Course Blueprint detailing sequencing and module outlines.
+  agent: learning_architect
+
+instructional_design_task:
+  description: >
+    Convert the structural blueprint and strategy into a comprehensive educational script for all modules.
+  expected_output: >
+    A full instructional script with text, theory, and narrative flow.
+  agent: instructional_designer
+
+storyboard_creation_task:
+  description: >
+    Take the instructional script and break it down into explicit visual frames, interactions, and on-screen text.
+  expected_output: >
+    A sequential storyboard detailing visual layout, on-screen text, and narration per frame.
+  agent: storyboard
+
+media_specification_task:
+  description: >
+    Draft precise technical specifications for SCORM packaging and slide generation from the storyboard.
+  expected_output: >
+    A robust media spec outlining asset resolution, format requirements, and slide generation rules.
+  agent: media_producer
+
+assessment_design_task:
+  description: >
+    Develop knowledge checks aligned directly with learning objectives using scenario-based stems and clear feedback.
+  expected_output: >
+    A complete set of assessment questions mapped rigorously to learning objectives.
+  agent: assessment_designer
+
+change_management_task:
+  description: >
+    Create an rollout enablement plan including communication templates to encourage training adoption.
+  expected_output: >
+    A change management action plan and related communication artifacts.
+  agent: change_management
+
+library_organization_task:
+  description: >
+    Compile, format, and organize all previous artifacts into strict final JSON schemas for deployment.
+  expected_output: >
+    Organized metadata library and indexed final outputs.
+  agent: operations_librarian
+
+pedagogical_review_task:
+  description: >
+    Review the full drafted storyboard and assets to verify educational density, depth, and pedagogical rigor.
+  expected_output: >
+    A review report noting any pedagogical weaknesses or cognitive gaps.
+  agent: quality_review
+
+final_qa_validation_task:
+  description: >
+    Perform the final structural check on the compiled pipeline data, ensuring it perfectly respects system schemas.
+  expected_output: >
+    A pass/fail QA summary and the finalized, schema-validated JSON payload ready for deployment.
+  agent: qa
